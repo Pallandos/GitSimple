@@ -95,7 +95,7 @@ git --version
 Cette commande devrait renvoyer : 
 
 ```sh
->> git version 2.43.0
+git version 2.43.0
 ```
 {: .nolineno}
 
@@ -104,3 +104,45 @@ avec votre version actuelle.
 #### WSL
 
 Pour ***WSL***, les instructions sont les mêmes que pour Linux, suivez simplement la distribution que vous avez installé dans *WSL*.
+
+#### MacOS
+
+La façon la plus simple d'installer **`git`** est d'utiliser *Homebrew*, le gestionnaire de paquet le plus populaire sur Mac.
+
+> Sur les versions Mavericks (10.9) ou supérieures vous pouvez tout simplement taper `git` ou `git --version` dans le terminal ce qui va déclencher l'installation automatique.
+{: .prompt-tip}
+
+1. Installez *Homebrew* si ce n'est pas déjà fait :
+
+	```shell
+   	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
+
+2. Installez **`git`**:
+
+	```shell
+	brew install git
+	```
+
+3. Vérifiez l'installation :
+
+	```shell
+	git --version
+	```
+
+	Qui devrait renvoyer un message du type :
+
+	```shell
+	git version 2.43.0
+	```
+	{: .nolineno}
+
+## Bilan
+
+Sur ce tutoriel, vous avez appris l'installation d'un environnement de travail, incluant le logiciel **`git`** lui-même dans un système d'exploitation compatible. 
+
+### Prochaine étape
+
+Dans le prochain tutoriel, nous aborderons les basiques de **`git`**. 
+
+---

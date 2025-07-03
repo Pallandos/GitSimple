@@ -4,5 +4,4 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+Ce site a été réalisé par un élève de Conception des Systèmes Numérique (CSN) de l'ENSTA ~~Bretagne~~.

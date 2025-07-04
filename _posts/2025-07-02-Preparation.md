@@ -1,7 +1,7 @@
 ---
 title: Préparation
 date: 2025-07-01 11:03:33 +1000
-categories: [Tuto]
+categories: [Tutos]
 tags:
 description: Installation des pré-requis
 ---

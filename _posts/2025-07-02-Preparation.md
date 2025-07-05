@@ -137,6 +137,18 @@ La façon la plus simple d'installer **`git`** est d'utiliser *Homebrew*, le ges
 	```
 	{: .nolineno}
 
+## Configuration
+
+La dernière étape est de paramétrer votre profil d'auteur, pour définir comment vos contributions seront signées et sous quel nom vos collaborateurs vous verront. 
+
+Pour cela utilisez la commande :
+
+```sh
+git config --global user.name "mon nom"
+git config --global user.email "mon@email.com" 
+```
+{: .nolineno}
+
 ## Bilan
 
 Sur ce tutoriel, vous avez appris l'installation d'un environnement de travail, incluant le logiciel **`git`** lui-même dans un système d'exploitation compatible. 

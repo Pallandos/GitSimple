@@ -22,11 +22,22 @@ Nous allons aborder à travers quelques règles et conseils comment maintenir un
 
 ### 1 - Ne garder que le nécessaire
 
-La première chose à éviter, c'est un dépôt rempli de fichiers divers *inutiles* comme des images, versions tests, binaires ou dossiers inutiles. 
+La première chose à éviter, c'est un dépôt rempli de fichiers divers *inutiles* comme des images, versions tests, binaires ou dossiers inutiles. Dans le monde de l'open source, on propose des fichiers lisibles, donc on ne met pas de binaires et autres fichiers compilés dans un dépôt : c'est l'utilisateur qui compilera. **`git`** se charge de l'historique de versions, donc on ne met pas des fichiers de tests : on teste les fonctionnalités dans des branches. On ne met pas non plus de fichiers propres à l’exécution du code, comme des `__pycache__` ou les fichiers d’environnement. 
+
+De manière générale, on ne met que les codes sources du projet, les fichiers configurations ou les licences, mais rien d'autre.
 
 On proscrit donc :
 
-- les dossiers `__pycache__` que l'on retrouve souvent dans les projets Python
+- les éléments propres à l'exécution locale (comme les `__pycache__` )
 - les binaires 
-- les `.venv` et autres fichiers d’environnement Python
+- les `.venv` et autres fichiers d’environnement
 - les fichiers textes (hors `.txt`) de type `.docx` ou *word*
+
+### 2 - Le `.gitignore` est obligatoire
+
+Pour satisfaire facilement la règle précédente, il faut prendre soin d'écrire un bon fichier `.gitignore`. C'estun fichier doté d'un format spécial, qui va définir quels sont les fichiers que **`git`** ne doit pas traiter. Il se compose d'expressions rationnelles. 
+
+> Lorsque vous créez un dépôt sur GitHub, vous pouvez choisir d'inclure un `.gitignore` basé sur *template*. Choisissez le langage principal de votre projet. Cela évite d'avoir un créer de toutes pièces un fichier complexe. 
+> 
+> ![...](/assets/img/gitignore.png)
+{: .prompt-tip}
